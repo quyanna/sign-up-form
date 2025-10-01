@@ -66,3 +66,34 @@ h5,
 h6 {
   text-wrap: balance;
 }
+
+/* Non-reset styling: */
+
+:root {
+  --l-width: 35vw;
+  --r-width: calc(100 - var(--l-width));
+}
+
+.page-columns {
+  display: flex;
+}
+
+.page-left {
+  display: flex;
+  height: 100vh;
+  width: var(--l-width);
+  max-width: 400px;
+  background-color: grey;
+}
+.page-right {
+  height: 100vh;
+  width: var(--r-width);
+  display: flex;
+  background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 600px) {
+  .page-left {
+    display: none;
+  }
+}
