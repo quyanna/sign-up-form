@@ -74,6 +74,9 @@ h6 {
   --l-max: 400px; /* max value of left column */
 
   --white-color: whitesmoke; /* The shade of white used for logo, footer, and maybe background*/
+
+  --system-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .page-columns {
@@ -89,6 +92,7 @@ h6 {
   flex: 0 0 min(var(--l-ideal), var(--l-max)); /* Fix the size of the left column */
   background: url(images/background-img.jpg) center / cover no-repeat;
 }
+
 .page-right {
   display: flex;
   flex-direction: column;
@@ -96,15 +100,30 @@ h6 {
   background-color: var(--white-color);
   align-items: flex-start;
   justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: var(--system-font);
+  gap: 2rem;
+}
+
+/* Apply padding without messing up the background colors */
+.page-right > div {
   padding-left: 30px;
 }
 
 .hero-text p {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 700;
-  max-inline-size: 70ch;
-  font-size: 1.2rem;
+  max-inline-size: 66ch; /* Increase readability */
+}
+
+.page-right h1 {
+  font-size: 1em;
+  font-weight: inherit;
+}
+
+.form-section {
+  background-color: white;
+  box-shadow: 0px 5px 8px -5px #c8bfc9;
+  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
