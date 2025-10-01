@@ -76,7 +76,7 @@ h6 {
 
 .page-columns {
   display: flex;
-  min-height: 100dvh;
+  min-height: 100dvh; /* dvh better for mobile screens? */
 }
 
 .page-left {
@@ -84,7 +84,7 @@ h6 {
   flex-direction: column;
   justify-content: space-between;
   flex: 0 0 min(var(--l-ideal), var(--l-max)); /* Fix the size of the left column */
-  background: url(background-img.jpg) center / cover no-repeat;
+  background: url(images/background-img.jpg) center / cover no-repeat;
 }
 .page-right {
   display: flex;
@@ -101,5 +101,20 @@ h6 {
   }
 }
 
+.banner {
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.204);
+  margin-top: 40%;
+  text-align: center;
+}
+
 footer {
+  font-size: 12px;
+  text-align: center;
+  color: whitesmoke;
+  margin-bottom: 5px;
+}
+
+footer a {
+  color: inherit;
 }
