@@ -6,3 +6,7 @@ A sign up form with vanilla CSS and HTML, made to practice form syntax.
 
 - Using Modern normalize
 - CSS Reset from [Josh Comeau](https://www.joshwcomeau.com/css/custom-css-reset/)
+
+TODO:
+
+- Adjust hero text font?
