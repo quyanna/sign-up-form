@@ -108,7 +108,7 @@ h6 {
 
 /* Apply padding without messing up the background colors */
 .page-right > div {
-  padding-left: 30px;
+  padding: 0px 10%;
 }
 
 .hero-text p {
@@ -118,12 +118,41 @@ h6 {
 .page-right h1 {
   font-size: 1em;
   font-weight: inherit;
+  margin: 10px 0;
 }
 
 .form-section {
   background-color: white;
-  box-shadow: 0px 5px 8px -5px #c8bfc9;
+  box-shadow: 0px 10px 8px -5px #c8bfc9;
   width: 100%;
+}
+
+form input {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.form-col {
+  display: flex;
+  flex-direction: column;
+  max-width: 35%;
+  flex: 1;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: grey;
+  font-size: 0.8rem;
 }
 
 @media only screen and (max-width: 600px) {
