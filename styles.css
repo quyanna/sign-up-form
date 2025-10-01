@@ -83,7 +83,10 @@ h6 {
   height: 100vh;
   width: var(--l-width);
   max-width: 400px;
-  background-color: grey;
+  background: url(background-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .page-right {
   height: 100vh;
