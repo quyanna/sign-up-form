@@ -1,3 +1,15 @@
+:root {
+  --l-ideal: 35vw; /* Desired left column width */
+  --l-max: 400px; /* max value of left column */
+
+  --white-color: whitesmoke; /* The shade of white used for logo, footer, and maybe background*/
+
+  --system-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --small-info-font: 300 1rem var(--system-font);
+  --button-color: #927a87;
+}
+
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -69,16 +81,6 @@ h6 {
 
 /* Non-reset styling: */
 
-:root {
-  --l-ideal: 35vw; /* Desired left column width */
-  --l-max: 400px; /* max value of left column */
-
-  --white-color: whitesmoke; /* The shade of white used for logo, footer, and maybe background*/
-
-  --system-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
 .page-columns {
   display: flex;
   min-height: 100dvh; /* dvh better for mobile screens? */
@@ -107,8 +109,10 @@ h6 {
 }
 
 /* Apply padding without messing up the background colors */
-.page-right > div {
-  padding: 0px 10%;
+.page-right > div,
+.form-section,
+.form-submit {
+  padding: 1rem 3rem;
 }
 
 .hero-text p {
@@ -118,41 +122,57 @@ h6 {
 .page-right h1 {
   font-size: 1em;
   font-weight: inherit;
-  margin: 10px 0;
-}
-
-.form-section {
-  background-color: white;
-  box-shadow: 0px 10px 8px -5px #c8bfc9;
+  margin: 0.2rem 0;
   width: 100%;
 }
 
+.form-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  box-shadow: 0px 10px 8px -5px #c8bfc9;
+  width: 100%;
+  column-gap: 3rem;
+}
+
 form input {
-  font-weight: 300;
-  font-size: 1rem;
+  font: var(--small-info-font);
 }
 
 form {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  width: 100%;
 }
 
 .form-col {
   display: flex;
   flex-direction: column;
-  max-width: 35%;
-  flex: 1;
+  width: 20%;
+  min-width: 15ch;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  margin: 8px 0px;
 }
 
 .form-group label {
   color: grey;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+}
+
+button[type="submit"] {
+  padding: 0.5rem 2.5rem;
+  font-size: 1rem;
+  background-color: var(--button-color);
+  color: var(--white-color);
+  border-style: none;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -162,6 +182,10 @@ form {
   .page-right {
     flex: 1 1 100%;
     justify-content: flex-start;
+    align-items: center;
+  }
+  .hero-text p {
+    font-size: 1rem;
   }
 }
 
