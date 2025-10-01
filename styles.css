@@ -70,28 +70,25 @@ h6 {
 /* Non-reset styling: */
 
 :root {
-  --l-width: 35vw;
-  --r-width: calc(100 - var(--l-width));
+  --l-ideal: 35vw; /* Desired left column width */
+  --l-max: 400px; /* max value of left column */
 }
 
 .page-columns {
   display: flex;
+  min-height: 100dvh;
 }
 
 .page-left {
   display: flex;
-  height: 100vh;
-  width: var(--l-width);
-  max-width: 400px;
-  background: url(background-img.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 min(var(--l-ideal), var(--l-max)); /* Fix the size of the left column */
+  background: url(background-img.jpg) center / cover no-repeat;
 }
 .page-right {
-  height: 100vh;
-  width: var(--r-width);
   display: flex;
+  flex: 1 1 auto;
   background-color: whitesmoke;
 }
 
@@ -99,4 +96,10 @@ h6 {
   .page-left {
     display: none;
   }
+  .page-right {
+    flex: 1 1 100%;
+  }
+}
+
+footer {
 }
