@@ -72,6 +72,8 @@ h6 {
 :root {
   --l-ideal: 35vw; /* Desired left column width */
   --l-max: 400px; /* max value of left column */
+
+  --white-color: whitesmoke; /* The shade of white used for logo, footer, and maybe background*/
 }
 
 .page-columns {
@@ -89,7 +91,7 @@ h6 {
 .page-right {
   display: flex;
   flex: 1 1 auto;
-  background-color: whitesmoke;
+  background-color: var(--white-color);
 }
 
 @media only screen and (max-width: 600px) {
@@ -101,17 +103,40 @@ h6 {
   }
 }
 
+@font-face {
+  font-family: "Norse";
+  src: url("fonts/Norse-Bold.woff2") format("woff2"),
+    url("fonts/Norse-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 .banner {
-  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 5rem;
+  font-family: "Norse";
+  color: var(--white-color);
   background-color: rgba(0, 0, 0, 0.204);
-  margin-top: 40%;
+
+  margin-top: 30vh;
   text-align: center;
+}
+
+.logo {
+  height: 1em;
+  width: auto;
+  color: var(--white-color);
+  margin-right: 8px;
 }
 
 footer {
   font-size: 12px;
   text-align: center;
-  color: whitesmoke;
+  color: var(--white-color);
   margin-bottom: 5px;
 }
 
