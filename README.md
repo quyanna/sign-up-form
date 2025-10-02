@@ -9,4 +9,4 @@ A sign up form with vanilla CSS and HTML, made to practice form syntax.
 
 TODO:
 
-- Adjust hero text font?
+- Add a banner on mobile
