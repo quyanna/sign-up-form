@@ -12,6 +12,7 @@
   --title-color: #826f79;
   --standard-gray: rgb(128, 128, 128);
   --focus-color: #48688d;
+  --invalid-color: red;
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -152,6 +153,11 @@ input:focus {
   outline: solid 1px var(--focus-color);
   border: solid 1px var(--focus-color);
   box-shadow: 2px 10px 17px -10px #646575;
+}
+
+input:invalid {
+  outline: solid 1px var(--invalid-color);
+  border: solid 1px var(--invalid-color);
 }
 
 form {

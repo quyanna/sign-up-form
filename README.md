@@ -10,5 +10,4 @@ A sign up form with vanilla CSS and HTML, made to practice form syntax.
 TODO:
 
 - Add a banner on mobile
-- Add required keyword to fields
 - rearrange the dom row-wise so that the fields arrange themselves correctly and can be tabbed through\*\*\*\*
