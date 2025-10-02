@@ -176,6 +176,7 @@ button[type="submit"] {
   color: var(--white-color);
   border-style: none;
   border-radius: 10px;
+  box-shadow: 0px 5px 15px -7px #7c6e66;
 }
 
 .account-already {
