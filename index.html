@@ -95,6 +95,8 @@
                   id="phone"
                   autocomplete="tel"
                   required
+                  pattern="[^A-Za-z]+"
+                  title="No letters allowed"
                 />
               </div>
             </div>
@@ -106,6 +108,7 @@
                   name="password"
                   id="password"
                   autocomplete="new-password"
+                  minlength="3"
                   required
                 />
               </div>
@@ -116,6 +119,7 @@
                   name="confirm"
                   id="confirm"
                   autocomplete="new-password"
+                  minlength="3"
                   required
                 />
               </div>

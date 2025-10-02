@@ -20,3 +20,7 @@ A sign up form made with vanilla CSS and HTML.
 
 - Download the files and open index.html in your browser OR
 - If hosted on GitHub Pages, you can also view it there.
+
+#### Notes
+
+Please disregard the poor/minimal form validation, as I did not use any JavaScript for this.
