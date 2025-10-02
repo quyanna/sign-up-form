@@ -10,6 +10,7 @@
   --button-color: rgb(213, 145, 105);
   --hero-text-color: #425066;
   --title-color: #826f79;
+  --standard-gray: rgb(128, 128, 128);
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -162,7 +163,7 @@ form {
 }
 
 .form-group label {
-  color: grey;
+  color: var(--standard-gray);
   font-size: 0.6rem;
   letter-spacing: 1px;
   text-wrap: nowrap;
@@ -179,6 +180,14 @@ button[type="submit"] {
   box-shadow: 0px 5px 15px -7px #7c6e66;
 }
 
+button[type="submit"]:hover {
+  color: var(--standard-gray);
+}
+
+button[type="submit"]:active {
+  box-shadow: inset 0px 5px 15px -7px #7c6e66;
+}
+
 .account-already {
   padding-top: 1rem;
   font: var(--small-info-font);
@@ -189,7 +198,7 @@ button[type="submit"] {
 }
 
 .account-already a:hover {
-  color: grey;
+  color: var(--standard-gray);
 }
 
 @media only screen and (max-width: 600px) {
