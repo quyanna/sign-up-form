@@ -11,6 +11,7 @@
   --hero-text-color: #425066;
   --title-color: #826f79;
   --standard-gray: rgb(128, 128, 128);
+  --focus-color: #48688d;
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -141,6 +142,12 @@ h6 {
 
 form input {
   font: var(--small-info-font);
+}
+
+input:focus {
+  outline: 0;
+  border: 2px solid var(--focus-color);
+  box-shadow: 0px 5px 15px -10px #6e6f89;
 }
 
 form {
