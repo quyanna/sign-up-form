@@ -1,6 +1,6 @@
 # sign-up-form
 
-A sign up form made with vanilla CSS and HTML.
+A sign up form made with vanilla CSS and HTML. Fluid and responsive. NOT a phishing scheme. 
 
 ## Skills practiced
 
@@ -24,3 +24,4 @@ A sign up form made with vanilla CSS and HTML.
 #### Notes
 
 Please disregard the poor/minimal form validation, as I did not use any JavaScript for this.
+This form does not save any of your information, anything you submit is appended to the end of the url as a query string for your temporary viewing pleasure. 
