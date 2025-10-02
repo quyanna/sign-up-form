@@ -11,3 +11,4 @@ TODO:
 
 - Add a banner on mobile
 - rearrange the dom row-wise so that the fields arrange themselves correctly and can be tabbed through\*\*\*\*
+- Change the text on the page

@@ -138,7 +138,6 @@ h6 {
   background-color: white;
   box-shadow: 0px 10px 8px -5px #c8bfc9;
   width: 100%;
-  column-gap: 3rem;
 }
 
 form input {
@@ -166,17 +165,17 @@ form {
   width: 100%;
 }
 
-.form-col {
+.form-row {
+  flex-wrap: wrap;
   display: flex;
-  flex-direction: column;
-  width: 20%;
-  min-width: 15ch;
+  column-gap: 3rem;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   margin: 8px 0px;
+  max-width: 30ch;
 }
 
 .form-group label {
@@ -218,20 +217,6 @@ button[type="submit"]:active {
   color: var(--standard-gray);
 }
 
-@media only screen and (max-width: 600px) {
-  .page-left {
-    display: none;
-  }
-  .page-right {
-    flex: 1 1 100%;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .hero-text p {
-    font-size: 1rem;
-  }
-}
-
 @font-face {
   font-family: "Norse";
   src: url("fonts/Norse-Bold.woff2") format("woff2"),
@@ -271,4 +256,32 @@ footer {
 
 footer a {
   color: inherit;
+}
+
+@media only screen and (max-width: 600px) {
+  .page-left {
+    flex: 0 0 4dvh;
+  }
+  .banner {
+    margin-top: 0;
+    font-size: 3rem;
+  }
+  .page-right {
+    flex: 1 1 100%;
+    font-size: 1rem;
+    justify-content: flex-start;
+  }
+  .hero-text p {
+    font-size: inherit;
+  }
+  .account-already {
+    font-size: inherit;
+  }
+  .page-columns {
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer {
+    font-size: 8px;
+  }
 }
